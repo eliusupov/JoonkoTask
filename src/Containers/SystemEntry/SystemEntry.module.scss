@@ -106,3 +106,13 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1300px) {
+	.systemEntry {
+		flex-direction: column;
+
+		> .infoContainer {
+			margin-bottom: 8rem;
+		}
+	}
+}
