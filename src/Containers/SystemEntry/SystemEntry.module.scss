@@ -1,0 +1,108 @@
+@import '../../css/designSystem';
+
+.systemEntry {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18% 14% 11% 14%;
+	height: 100%;
+
+	> .infoContainer {
+		display: flex;
+		flex-direction: column;
+		font-size: 1.8rem;
+		z-index: 1;
+
+		> h2 {
+			font-size: 4rem;
+			font-weight: 800;
+		}
+
+		> h3 {
+			font-size: 2.4rem;
+		}
+
+		> div {
+			margin: 5% 0;
+
+			> p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	> .form {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		min-width: 34%;
+		background: #ffffff;
+		padding: 7.4rem 4.1rem 5rem 4.1rem;
+		box-shadow: $box-shadow;
+		margin-left: 10%;
+		z-index: 1;
+
+		> h3 {
+			font-weight: 800;
+			margin-bottom: 15px;
+		}
+
+		> h4 {
+			font-size: 18px;
+			margin-bottom: 41px;
+		}
+
+		> button {
+			background: #ffa52e 0% 0% no-repeat padding-box;
+			outline: none;
+			border-radius: 50px;
+			border: none;
+			padding: 15px 17px;
+			cursor: pointer;
+			margin: 28px 0 24px 0;
+			height: 54px;
+
+			> span {
+				color: #fff;
+			}
+		}
+
+		:global(.ant-space) {
+			width: 100%;
+		}
+
+		:global(.ant-form-item) {
+			:global(.ant-form-item-explain) {
+				font-size: 12px;
+			}
+
+			:global(.ant-form-item-control-input-content) {
+				input {
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					border-bottom: 1px solid #010a60;
+
+					&:focus {
+						outline: none;
+						box-shadow: none;
+					}
+
+					&::placeholder {
+						color: $placeholder;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
+		.err {
+			:global(.ant-checkbox-wrapper) {
+				> span > span {
+					color: $err !important;
+				}
+			}
+		}
+	}
+}
